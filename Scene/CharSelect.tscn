@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://djuwyv7glkhnc"]
+
+[ext_resource type="Texture2D" uid="uid://b5vk4eiimqbup" path="res://Assets/Character/Warlord/Potrait.png" id="1_x6x4b"]
+
+[node name="CharSelect" type="Node2D"]
+
+[node name="BoxContainer" type="BoxContainer" parent="."]
+offset_top = 198.0
+offset_right = 1366.0
+offset_bottom = 773.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BoxContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="BoxContainer/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_x6x4b")

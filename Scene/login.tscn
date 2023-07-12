@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=3 uid="uid://df0xjxx33elyq"]
+
+[ext_resource type="Script" path="res://Scene/login.gd" id="1_lta5l"]
+[ext_resource type="Texture2D" uid="uid://cca14l7qjkf6b" path="res://Assets/Background/Tavern.jpeg" id="2_8d68v"]
+[ext_resource type="Texture2D" uid="uid://c5ia15vx78rji" path="res://Assets/Background/MyTurn.png" id="3_mi756"]
+
+[node name="login" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lta5l")
+
+[node name="Background" type="TextureRect" parent="."]
+modulate = Color(0.6, 0.6, 0.6, 1)
+layout_mode = 0
+offset_right = 1363.0
+offset_bottom = 767.0
+texture = ExtResource("2_8d68v")
+
+[node name="Logo" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -328.0
+offset_right = 328.0
+offset_bottom = 352.0
+grow_horizontal = 2
+texture = ExtResource("3_mi756")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.777
+anchor_right = 0.5
+anchor_bottom = 0.937
+offset_left = -201.0
+offset_top = 68.264
+offset_right = 201.0
+offset_bottom = 48.384
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.988235, 0.988235, 0.619608, 1)
+theme_override_colors/font_shadow_color = Color(0.788235, 0.545098, 0.25098, 1)
+theme_override_font_sizes/font_size = 32
+text = "Tap anywhere to continue"
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

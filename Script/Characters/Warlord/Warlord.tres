@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://ds0uove3akfkl"]
+
+[ext_resource type="Texture2D" uid="uid://b5vk4eiimqbup" path="res://Assets/Character/Warlord/Potrait.png" id="1_scjxu"]
+[ext_resource type="Script" path="res://Script/Character_Script.gd" id="2_irauj"]
+
+[resource]
+script = ExtResource("2_irauj")
+name = "Warlord"
+max_hp = 150
+attack = 0
+image = ExtResource("1_scjxu")
