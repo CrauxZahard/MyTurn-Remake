@@ -6,5 +6,5 @@ func _ready():
 
 func _on_gui_input(event):
 	if event.is_pressed() == true:
-		get_tree().change_scene_to_file("res://Scene/lobby.tscn")
+		get_tree().change_scene_to_file("res://Scene/lobby-scene/lobby.tscn")
 	

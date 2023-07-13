@@ -18,9 +18,9 @@ texture = ExtResource("1_gxk0l")
 expand_mode = 1
 
 [node name="battle-button" type="TextureButton" parent="match-button-container"]
-offset_left = 175.0
+offset_left = 174.0
 offset_top = 23.0
-offset_right = 413.0
+offset_right = 412.0
 offset_bottom = 115.0
 texture_normal = ExtResource("2_m6rr5")
 texture_pressed = ExtResource("3_4106n")
@@ -49,9 +49,9 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.023
 anchor_bottom = 0.111
-offset_left = 25.0
+offset_left = 22.0
 offset_top = 11.0
-offset_right = 149.064
+offset_right = 146.064
 offset_bottom = 112.46
 texture_normal = ExtResource("4_olj6e")
 texture_pressed = ExtResource("5_hqn8x")
