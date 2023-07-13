@@ -10,9 +10,9 @@ config_version=5
 
 [application]
 
-config/name="My Turn Remake"
+config/name="MyTurn Revival"
 run/main_scene="res://Scene/login.tscn"
-config/features=PackedStringArray("4.0", "GL Compatibility")
+config/features=PackedStringArray("4.1", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [display]
@@ -23,5 +23,7 @@ window/size/initial_position_type=0
 
 [rendering]
 
-renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"
+renderer/rendering_method="mobile"
+renderer/rendering_method.web="mobile"
+textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(1, 1, 1, 1)
