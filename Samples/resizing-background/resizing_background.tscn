@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://ce8dnjo4wv30"]
+
+[ext_resource type="Texture2D" uid="uid://cca14l7qjkf6b" path="res://Assets/Background/Tavern.jpeg" id="1_n5jng"]
+
+[node name="resizing-background" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1367.0
+offset_bottom = 768.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_n5jng")
+expand_mode = 1
