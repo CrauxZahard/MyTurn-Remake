@@ -16,8 +16,8 @@ script = ExtResource("1_lta5l")
 [node name="Background" type="TextureRect" parent="."]
 modulate = Color(0.6, 0.6, 0.6, 1)
 layout_mode = 0
-offset_right = 1363.0
-offset_bottom = 767.0
+offset_right = 1366.0
+offset_bottom = 768.0
 texture = ExtResource("2_8d68v")
 
 [node name="Logo" type="TextureRect" parent="."]

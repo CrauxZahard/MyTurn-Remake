@@ -14,12 +14,17 @@ config/name="MyTurn Revival"
 run/main_scene="res://Scene/login.tscn"
 config/features=PackedStringArray("4.1", "GL Compatibility")
 config/icon="res://icon.svg"
+run/templates_search_path="res://script_templates"
 
 [display]
 
 window/size/viewport_width=1366
 window/size/viewport_height=768
 window/size/initial_position_type=0
+window/stretch/mode="canvas_items"
+window/image=""
+window/icon="res://icon.svg"
+window/main_scene="res://Scene/login.tscn"
 
 [rendering]
 
