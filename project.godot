@@ -28,7 +28,7 @@ window/main_scene="res://Scene/login.tscn"
 
 [rendering]
 
-renderer/rendering_method="mobile"
+renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.web="mobile"
 textures/vram_compression/import_etc2_astc=true
 environment/defaults/default_clear_color=Color(1, 1, 1, 1)

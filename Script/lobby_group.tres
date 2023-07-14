@@ -1,7 +1,7 @@
 [gd_resource type="ButtonGroup" load_steps=2 format=3 uid="uid://d3lsvis5ue15w"]
 
-[sub_resource type="GDScript" id="GDScript_a2qub"]
+[ext_resource type="Script" path="res://Script/lobby_group.gd" id="1_d7kh8"]
 
 [resource]
 resource_local_to_scene = false
-script = SubResource("GDScript_a2qub")
+script = ExtResource("1_d7kh8")

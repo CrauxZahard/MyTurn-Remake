@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djkyqispbupgy"
-path="res://.godot/imported/2204_w026_n002_1834b_p1_1834.jpg-9b340d6dd6f92aeadb75fc7402749bd5.ctex"
+uid="uid://bnnr5h8wopb3"
+path="res://.godot/imported/Portrait.png-f8c9329e0e1da05f4dd2c7ecd6bd54d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GUI/2204_w026_n002_1834b_p1_1834.jpg"
-dest_files=["res://.godot/imported/2204_w026_n002_1834b_p1_1834.jpg-9b340d6dd6f92aeadb75fc7402749bd5.ctex"]
+source_file="res://Assets/Character/Apprentice/Portrait.png"
+dest_files=["res://.godot/imported/Portrait.png-f8c9329e0e1da05f4dd2c7ecd6bd54d5.ctex"]
 
 [params]
 
