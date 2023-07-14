@@ -1,0 +1,65 @@
+[gd_scene load_steps=7 format=3 uid="uid://bvuyurtp4qu17"]
+
+[ext_resource type="Texture2D" uid="uid://bhfyt2wovvsqe" path="res://Samples/styling-button/buttons-container.png" id="1_gxk0l"]
+[ext_resource type="Texture2D" uid="uid://c6ufrt570f1sp" path="res://Samples/styling-button/button-background.png" id="2_m6rr5"]
+[ext_resource type="Texture2D" uid="uid://bhykqltjtqvv4" path="res://Samples/styling-button/battle-button/button-background-pressed.png" id="3_4106n"]
+[ext_resource type="Texture2D" uid="uid://dpw40hdsi2lfx" path="res://Samples/styling-button/select-mode-button/select-mode-button.png" id="4_olj6e"]
+[ext_resource type="Texture2D" uid="uid://tkkoqmq8wbi2" path="res://Samples/styling-button/select-mode-button/Group 9.png" id="5_66ccm"]
+[ext_resource type="Texture2D" uid="uid://ohgky3clne02" path="res://Samples/styling-button/select-mode-button/select-mode-button-pressed.png" id="5_hqn8x"]
+
+[node name="styling-button" type="Node2D"]
+
+[node name="match-button-container" type="TextureRect" parent="."]
+offset_left = 881.0
+offset_top = 579.0
+offset_right = 1313.0
+offset_bottom = 719.0
+texture = ExtResource("1_gxk0l")
+expand_mode = 1
+
+[node name="battle-button" type="TextureButton" parent="match-button-container"]
+offset_left = 174.0
+offset_top = 23.0
+offset_right = 412.0
+offset_bottom = 115.0
+texture_normal = ExtResource("2_m6rr5")
+texture_pressed = ExtResource("3_4106n")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="button-label" type="RichTextLabel" parent="match-button-container/battle-button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 38.0
+offset_top = 24.0
+offset_right = -33.0
+offset_bottom = -28.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/bold_font_size = 30
+text = "Battle Start"
+scroll_active = false
+
+[node name="select-mode-button" type="TextureButton" parent="match-button-container"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.023
+anchor_bottom = 0.111
+offset_left = 22.0
+offset_top = 11.0
+offset_right = 146.064
+offset_bottom = 112.46
+texture_normal = ExtResource("4_olj6e")
+texture_pressed = ExtResource("5_hqn8x")
+
+[node name="button-label" type="TextureRect" parent="match-button-container/select-mode-button"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 21.0
+offset_right = 111.0
+offset_bottom = 99.0
+texture = ExtResource("5_66ccm")

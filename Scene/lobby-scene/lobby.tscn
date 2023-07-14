@@ -1,0 +1,184 @@
+[gd_scene load_steps=23 format=3 uid="uid://b6oqohu2moqbv"]
+
+[ext_resource type="Texture2D" uid="uid://bvaej5803y52s" path="res://Assets/Background/lobby.jpg" id="1_yyjoo"]
+[ext_resource type="Texture2D" uid="uid://ch4sc0kw6rpm8" path="res://Assets/GUI/match-buttons/match-buttons-container.png" id="2_8xtm6"]
+[ext_resource type="Texture2D" uid="uid://dewyl5lcmx4cv" path="res://Samples/styling-button/battle-button/button-background.png" id="3_6rq8h"]
+[ext_resource type="Texture2D" uid="uid://bhykqltjtqvv4" path="res://Samples/styling-button/battle-button/button-background-pressed.png" id="4_p1i7y"]
+[ext_resource type="Texture2D" uid="uid://dpw40hdsi2lfx" path="res://Samples/styling-button/select-mode-button/select-mode-button.png" id="5_rqlua"]
+[ext_resource type="Texture2D" uid="uid://ohgky3clne02" path="res://Samples/styling-button/select-mode-button/select-mode-button-pressed.png" id="6_w5jll"]
+[ext_resource type="Texture2D" uid="uid://tkkoqmq8wbi2" path="res://Samples/styling-button/select-mode-button/Group 9.png" id="7_j68lb"]
+[ext_resource type="Texture2D" uid="uid://dw050a2fqhrla" path="res://Assets/GUI/header-gui/header-bg.png" id="8_d3auc"]
+[ext_resource type="Texture2D" uid="uid://chp21wdktjmk8" path="res://Assets/GUI/header-gui/highlight-display.png" id="9_rtqok"]
+[ext_resource type="Texture2D" uid="uid://dnkirx5exyac5" path="res://Assets/GUI/header-gui/username-panel.png" id="10_7xoc5"]
+[ext_resource type="Texture2D" uid="uid://bgoofo3smdxg0" path="res://Assets/GUI/header-gui/avatar-border.png" id="11_xqnro"]
+[ext_resource type="Shader" path="res://Script/shaders/corner-radius.gdshader" id="12_20vt7"]
+[ext_resource type="Script" path="res://Scene/lobby-scene/username-label.gd" id="13_4xqd5"]
+[ext_resource type="Texture2D" uid="uid://dw4q1jp6wfqr4" path="res://Assets/GUI/header-gui/icon-button/menu.png" id="13_50cg1"]
+[ext_resource type="Script" path="res://Scene/lobby-scene/avatar-img.gd" id="13_a45gb"]
+[ext_resource type="Texture2D" uid="uid://dok7p2jed2etp" path="res://Assets/GUI/header-gui/icon-button/donut.png" id="13_dv7ds"]
+[ext_resource type="Texture2D" uid="uid://bsptm6vcw4jhh" path="res://Assets/GUI/header-gui/icon-button/donut-pressed.png" id="14_jjf01"]
+[ext_resource type="Texture2D" uid="uid://0f1rltwk5a2v" path="res://Assets/GUI/header-gui/icon-button/menu-pressed.png" id="14_x576d"]
+[ext_resource type="Texture2D" uid="uid://2nujghht2wkn" path="res://Assets/GUI/header-gui/icon-button/friend.png" id="15_eupo4"]
+[ext_resource type="Texture2D" uid="uid://dkagsqpl3r2ty" path="res://Assets/GUI/header-gui/icon-button/friend-pressed.png" id="16_dlflt"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_m4yfd"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wkilb"]
+resource_local_to_scene = true
+shader = ExtResource("12_20vt7")
+shader_parameter/corner_radius = 1000.0
+
+[node name="lobby-scene" type="Node2D"]
+
+[node name="lobby-background" type="TextureRect" parent="."]
+offset_left = -15.0
+offset_right = 1374.0
+offset_bottom = 769.0
+texture = ExtResource("1_yyjoo")
+
+[node name="match-button-container" type="TextureRect" parent="."]
+offset_left = 893.0
+offset_top = 594.0
+offset_right = 1325.0
+offset_bottom = 734.0
+texture = ExtResource("2_8xtm6")
+expand_mode = 1
+
+[node name="battle-button" type="TextureButton" parent="match-button-container"]
+layout_mode = 0
+offset_left = 174.0
+offset_top = 23.0
+offset_right = 412.0
+offset_bottom = 115.0
+texture_normal = ExtResource("3_6rq8h")
+texture_pressed = ExtResource("4_p1i7y")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="button-label" type="RichTextLabel" parent="match-button-container/battle-button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 38.0
+offset_top = 24.0
+offset_right = -33.0
+offset_bottom = -28.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/bold_font_size = 30
+text = "Battle Start"
+scroll_active = false
+
+[node name="select-mode-button" type="TextureButton" parent="match-button-container"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.023
+anchor_bottom = 0.111
+offset_left = 22.0
+offset_top = 11.0
+offset_right = 146.064
+offset_bottom = 112.46
+texture_normal = ExtResource("5_rqlua")
+texture_pressed = ExtResource("6_w5jll")
+
+[node name="button-label" type="TextureRect" parent="match-button-container/select-mode-button"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 21.0
+offset_right = 111.0
+offset_bottom = 99.0
+texture = ExtResource("7_j68lb")
+
+[node name="header-display" type="TextureRect" parent="."]
+material = SubResource("CanvasItemMaterial_m4yfd")
+offset_left = -1.0
+offset_right = 1369.0
+offset_bottom = 104.0
+texture = ExtResource("8_d3auc")
+expand_mode = 1
+
+[node name="left-highlight" type="TextureRect" parent="header-display"]
+layout_mode = 0
+offset_right = 423.0
+offset_bottom = 104.0
+texture = ExtResource("9_rtqok")
+expand_mode = 1
+
+[node name="username-panel" type="TextureRect" parent="header-display/left-highlight"]
+layout_mode = 0
+offset_left = 73.0
+offset_top = 24.0
+offset_right = 332.0
+offset_bottom = 84.0
+texture = ExtResource("10_7xoc5")
+expand_mode = 1
+
+[node name="avatar-border" type="TextureRect" parent="header-display/left-highlight"]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 13.0
+offset_right = 113.0
+offset_bottom = 93.0
+texture = ExtResource("11_xqnro")
+
+[node name="avatar-img" type="TextureRect" parent="header-display/left-highlight/avatar-border"]
+material = SubResource("ShaderMaterial_wkilb")
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 74.0
+offset_bottom = 74.0
+expand_mode = 1
+script = ExtResource("13_a45gb")
+
+[node name="username-label" type="Label" parent="header-display/left-highlight"]
+layout_mode = 0
+offset_left = 138.0
+offset_top = 35.0
+offset_right = 304.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0.996078, 0.752941, 0.513726, 1)
+theme_override_font_sizes/font_size = 25
+text_direction = 1
+script = ExtResource("13_4xqd5")
+
+[node name="right-highlight" type="TextureRect" parent="header-display"]
+layout_mode = 0
+offset_left = 944.0
+offset_right = 1367.0
+offset_bottom = 104.0
+texture = ExtResource("9_rtqok")
+expand_mode = 1
+flip_h = true
+
+[node name="menu-button" type="TextureButton" parent="header-display/right-highlight"]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 28.0
+offset_right = 392.0
+offset_bottom = 88.0
+texture_normal = ExtResource("13_50cg1")
+texture_pressed = ExtResource("14_x576d")
+
+[node name="friends-button" type="TextureButton" parent="header-display/right-highlight"]
+layout_mode = 0
+offset_left = 221.0
+offset_top = 28.0
+offset_right = 301.0
+offset_bottom = 88.0
+texture_normal = ExtResource("15_eupo4")
+texture_pressed = ExtResource("16_dlflt")
+ignore_texture_size = true
+
+[node name="donut-button" type="TextureButton" parent="header-display/right-highlight"]
+layout_mode = 0
+offset_left = 129.0
+offset_top = 28.0
+offset_right = 189.0
+offset_bottom = 88.0
+texture_normal = ExtResource("13_dv7ds")
+texture_pressed = ExtResource("14_jjf01")
+ignore_texture_size = true

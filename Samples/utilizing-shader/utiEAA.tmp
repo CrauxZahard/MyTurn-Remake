@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://btfl8753em0o8"]
+
+[ext_resource type="Shader" path="res://Samples/utilizing-shader/utilizing-shader.gdshader" id="1_0gh2e"]
+[ext_resource type="Script" path="res://Samples/utilizing-shader/Button.gd" id="1_e2lni"]
+[ext_resource type="Texture2D" uid="uid://clmmjr1q33b4l" path="res://Assets/Character/Warlord/Idle.png" id="2_mhj3r"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kg6s3"]
+shader = ExtResource("1_0gh2e")
+shader_parameter/flash = Vector4(1, 0, 0, 1)
+shader_parameter/flash_modifier = 0.0
+
+[node name="utilizing-shader" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+offset_left = 96.0
+offset_top = 108.0
+offset_right = 294.0
+offset_bottom = 174.0
+text = "Text"
+script = ExtResource("1_e2lni")
+
+[node name="warlord-stomp" type="TextureRect" parent="."]
+material = SubResource("ShaderMaterial_kg6s3")
+offset_left = 459.0
+offset_top = 124.0
+offset_right = 1088.0
+offset_bottom = 567.0
+texture = ExtResource("2_mhj3r")
