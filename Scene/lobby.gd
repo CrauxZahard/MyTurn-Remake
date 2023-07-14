@@ -1,5 +1,4 @@
 extends Control
-@export var buttons: ButtonGroup
 enum Selected {
 	SHOP,
 	DECK,
@@ -11,4 +10,5 @@ enum Selected {
 var choosed = Selected.SHOP
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	$VBoxContainer.set_size(Vector2(250, get_viewport().size.y))
+	pass 

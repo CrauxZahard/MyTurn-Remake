@@ -1,0 +1,64 @@
+[gd_resource type="Resource" script_class="Character" load_steps=13 format=3 uid="uid://ds0uove3akfkl"]
+
+[ext_resource type="Texture2D" uid="uid://clmmjr1q33b4l" path="res://Assets/Character/Warlord/Idle.png" id="1_sp8ia"]
+[ext_resource type="Script" path="res://Script/Scriptable/ScriptableCharacter.gd" id="1_vinjg"]
+[ext_resource type="Texture2D" uid="uid://brcs5fymo1n65" path="res://Assets/Character/Warlord/Skill.png" id="2_0k5gi"]
+[ext_resource type="Script" path="res://Script/Scriptable/ScriptableCard.gd" id="2_m5krb"]
+[ext_resource type="Texture2D" uid="uid://c50aodhq1y1j6" path="res://Assets/Character/Warlord/Hit.png" id="3_6qjjp"]
+[ext_resource type="Script" path="res://Script/Scriptable/ScriptableSkill.gd" id="4_b4fdv"]
+[ext_resource type="Texture2D" uid="uid://bayroskx1mlgd" path="res://Assets/Character/Warlord/Attack.png" id="4_yvgyn"]
+
+[sub_resource type="Resource" id="Resource_vrp38"]
+script = ExtResource("2_m5krb")
+type = 0
+cardName = "Attack"
+cardDesc = "Deals %(100) damagw"
+
+[sub_resource type="Resource" id="Resource_wnw65"]
+script = ExtResource("4_b4fdv")
+targetType = 0
+useRNG = false
+skillCost = 0
+skillEffect = Array[int]([])
+type = 0
+cardName = "Invincible Warlord"
+cardDesc = "Deal %(350) damage to the enemy and gain shield equals to that amount"
+
+[sub_resource type="Resource" id="Resource_0ti1t"]
+script = ExtResource("4_b4fdv")
+targetType = 6
+useRNG = false
+skillCost = 1
+skillEffect = Array[int]([])
+type = 0
+cardName = "Exorcism Pattern"
+cardDesc = "Taunt, Dispel debuffs, and empower."
+
+[sub_resource type="Resource" id="Resource_aiywn"]
+script = ExtResource("4_b4fdv")
+targetType = 0
+useRNG = false
+skillCost = 3
+skillEffect = Array[int]([])
+type = 0
+cardName = "Pinpoint Target"
+cardDesc = "Deal %(50) damage. force the enemy to be taunted."
+
+[sub_resource type="Resource" id="Resource_lcqtb"]
+script = ExtResource("4_b4fdv")
+targetType = 3
+useRNG = true
+skillCost = 2
+skillEffect = Array[int]([])
+type = 0
+cardName = "War Mobilization"
+cardDesc = "Transform a random skill of your hand into an attacks for each ally."
+
+[resource]
+script = ExtResource("1_vinjg")
+baseHp = 100
+name = "Warlord"
+image = Array[Texture]([ExtResource("1_sp8ia"), ExtResource("2_0k5gi"), ExtResource("3_6qjjp"), ExtResource("4_yvgyn")])
+attackCard = SubResource("Resource_vrp38")
+skillCard = Array[ExtResource("4_b4fdv")]([SubResource("Resource_0ti1t"), SubResource("Resource_aiywn"), SubResource("Resource_lcqtb")])
+ex = SubResource("Resource_wnw65")

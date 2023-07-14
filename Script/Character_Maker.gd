@@ -1,8 +1,13 @@
-class_name Character extends Resource
+class_name Csr extends Resource
+
+@export var name: String
+@export var max_hp: int
+@export var image: Texture
+@export var attack: int
 
 # these are default values
 func _init(p_name = "Placeholder", p_max = 1, p_hp = 1, p_en = 0, p_tex = null):
-	self.name = p_name
+	name = p_name
 	self.max_hp = p_max
 	self.hp = p_hp
 	self.energy = p_en
