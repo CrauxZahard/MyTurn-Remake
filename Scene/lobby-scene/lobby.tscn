@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://b6oqohu2moqbv"]
+[gd_scene load_steps=23 format=3 uid="uid://b6oqohu2moqbv"]
 
 [ext_resource type="Texture2D" uid="uid://bvaej5803y52s" path="res://Assets/Background/lobby.jpg" id="1_yyjoo"]
 [ext_resource type="Texture2D" uid="uid://ch4sc0kw6rpm8" path="res://Assets/GUI/match-buttons/match-buttons-container.png" id="2_8xtm6"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://chp21wdktjmk8" path="res://Assets/GUI/header-gui/highlight-display.png" id="9_rtqok"]
 [ext_resource type="Texture2D" uid="uid://dnkirx5exyac5" path="res://Assets/GUI/header-gui/username-panel.png" id="10_7xoc5"]
 [ext_resource type="Texture2D" uid="uid://bgoofo3smdxg0" path="res://Assets/GUI/header-gui/avatar-border.png" id="11_xqnro"]
+[ext_resource type="Shader" path="res://Script/shaders/corner-radius.gdshader" id="12_20vt7"]
 [ext_resource type="Script" path="res://Scene/lobby-scene/username-label.gd" id="13_4xqd5"]
 [ext_resource type="Texture2D" uid="uid://dw4q1jp6wfqr4" path="res://Assets/GUI/header-gui/icon-button/menu.png" id="13_50cg1"]
 [ext_resource type="Script" path="res://Scene/lobby-scene/avatar-img.gd" id="13_a45gb"]
@@ -20,9 +21,16 @@
 [ext_resource type="Texture2D" uid="uid://2nujghht2wkn" path="res://Assets/GUI/header-gui/icon-button/friend.png" id="15_eupo4"]
 [ext_resource type="Texture2D" uid="uid://dkagsqpl3r2ty" path="res://Assets/GUI/header-gui/icon-button/friend-pressed.png" id="16_dlflt"]
 
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_m4yfd"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wkilb"]
+resource_local_to_scene = true
+shader = ExtResource("12_20vt7")
+shader_parameter/corner_radius = 1000.0
+
 [node name="lobby-scene" type="Node2D"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="lobby-background" type="TextureRect" parent="."]
 offset_left = -15.0
 offset_right = 1374.0
 offset_bottom = 769.0
@@ -85,6 +93,7 @@ offset_bottom = 99.0
 texture = ExtResource("7_j68lb")
 
 [node name="header-display" type="TextureRect" parent="."]
+material = SubResource("CanvasItemMaterial_m4yfd")
 offset_left = -1.0
 offset_right = 1369.0
 offset_bottom = 104.0
@@ -116,10 +125,11 @@ offset_bottom = 93.0
 texture = ExtResource("11_xqnro")
 
 [node name="avatar-img" type="TextureRect" parent="header-display/left-highlight/avatar-border"]
+material = SubResource("ShaderMaterial_wkilb")
 layout_mode = 0
 offset_left = 6.0
-offset_top = 4.0
-offset_right = 76.0
+offset_top = 6.0
+offset_right = 74.0
 offset_bottom = 74.0
 expand_mode = 1
 script = ExtResource("13_a45gb")
@@ -145,6 +155,7 @@ expand_mode = 1
 flip_h = true
 
 [node name="menu-button" type="TextureButton" parent="header-display/right-highlight"]
+layout_mode = 0
 offset_left = 332.0
 offset_top = 28.0
 offset_right = 392.0
@@ -153,6 +164,7 @@ texture_normal = ExtResource("13_50cg1")
 texture_pressed = ExtResource("14_x576d")
 
 [node name="friends-button" type="TextureButton" parent="header-display/right-highlight"]
+layout_mode = 0
 offset_left = 221.0
 offset_top = 28.0
 offset_right = 301.0
