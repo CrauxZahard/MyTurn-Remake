@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfksv227xtjrj"
-path="res://.godot/imported/match-buttons-container.png-81b8247730d4a370c3d71adf56a02e97.ctex"
+uid="uid://bta4n5y3soiku"
+path="res://.godot/imported/Hit.png-65a85fdbb70a7090d53e439b74ac6399.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://samples/styling-button/match-buttons-container.png"
-dest_files=["res://.godot/imported/match-buttons-container.png-81b8247730d4a370c3d71adf56a02e97.ctex"]
+source_file="res://assets/img/characters/Apprentice/Hit.png"
+dest_files=["res://.godot/imported/Hit.png-65a85fdbb70a7090d53e439b74ac6399.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfksv227xtjrj"
-path="res://.godot/imported/match-buttons-container.png-81b8247730d4a370c3d71adf56a02e97.ctex"
+uid="uid://c5ia15vx78rji"
+path="res://.godot/imported/MyTurn.png-40a429e78aac9f1cba5f468508631cde.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://samples/styling-button/match-buttons-container.png"
-dest_files=["res://.godot/imported/match-buttons-container.png-81b8247730d4a370c3d71adf56a02e97.ctex"]
+source_file="res://assets/img/backgrounds/MyTurn.png"
+dest_files=["res://.godot/imported/MyTurn.png-40a429e78aac9f1cba5f468508631cde.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dewyl5lcmx4cv"
-path="res://.godot/imported/button-background.png-f38bdbd2b68918bc78876384afe07372.ctex"
+path="res://.godot/imported/button-background.png-1c0183a6a4c865d129c21d802cb52cda.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Samples/styling-button/battle-button/button-background.png"
-dest_files=["res://.godot/imported/button-background.png-f38bdbd2b68918bc78876384afe07372.ctex"]
+source_file="res://samples/styling-button/battle-button/button-background.png"
+dest_files=["res://.godot/imported/button-background.png-1c0183a6a4c865d129c21d802cb52cda.ctex"]
 
 [params]
 

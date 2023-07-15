@@ -25,8 +25,9 @@ func _removeMixColor(delta):
 	if _isTimeout(delta):
 		show.warlord.material.set_shader_parameter("flash_modifier", 0);
 		show.timer = 0
+	pass
 
-# A FUNCTION THAT RETURNS TRUE OR FALSE	
+# A TIMEOUT FUNCTION THAT RETURNS TRUE OR FALSE	
 func _isTimeout(delta):
 	show.timer += delta;
 	return show.timer > show.wait_time;

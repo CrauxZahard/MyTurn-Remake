@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfksv227xtjrj"
-path="res://.godot/imported/match-buttons-container.png-81b8247730d4a370c3d71adf56a02e97.ctex"
+uid="uid://dfegem3p2m0t1"
+path="res://.godot/imported/Skill.png-e382cc9d7ac010707db7f8df7c41ff26.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://samples/styling-button/match-buttons-container.png"
-dest_files=["res://.godot/imported/match-buttons-container.png-81b8247730d4a370c3d71adf56a02e97.ctex"]
+source_file="res://assets/img/characters/Apprentice/Skill.png"
+dest_files=["res://.godot/imported/Skill.png-e382cc9d7ac010707db7f8df7c41ff26.ctex"]
 
 [params]
 
