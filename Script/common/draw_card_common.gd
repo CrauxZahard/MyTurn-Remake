@@ -16,10 +16,11 @@ func drawCardSprite(cname, cmana, cdesc, cimage, ccolor, cposition):
 	# Designing desc label
 	var descLabel = Label.new(); 
 	descLabel.set_text(cdesc);
-	descLabel.set_position(Vector2(-97, 30));
 	descLabel.vertical_alignment = VERTICAL_ALIGNMENT_CENTER;
 	descLabel.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER;
 	descLabel.add_theme_font_size_override("font_size", 12);
+	descLabel.set_position(self._getPositionBaseOnSize(descLabel.get_minimum_size()));
+	#descLabel.set_position(Vector2(-97, 30));
 	
 	# Designing card image
 	var textureDisplay = TextureRect.new();
@@ -51,3 +52,13 @@ func _findCardColor(color, sprite):
 		sprite.set_texture(load("res://assets/img/card-skins/yello_skin.png"));
 	if(color == colorEnum.PURPLE):
 		sprite.set_texture(load("res://assets/img/card-skins/purple_skin.png"));
+
+func _getPositionBaseOnSize(size):
+	var xAxis = size.x/2;
+	var yAxis = size.y/2
+	if(xAxis > 70):
+		return Vector2(-xAxis + 24, yAxis + 32)
+	if(xAxis > 100):
+		return Vector2(0, 0);
+	return Vector2(-xAxis + 19, yAxis + 32)
+	

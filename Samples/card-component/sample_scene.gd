@@ -1,5 +1,6 @@
 extends Node2D
 var cardColorEnum = EnumContainerHelper.CardColorsEnum;
+
 var CARDS = [
 	{
 		"cname": "Attack",
@@ -27,7 +28,6 @@ var CARDS = [
 	}
 ];
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	var cardinal = DrawCardCommon.new();
 	for card in CARDS:
