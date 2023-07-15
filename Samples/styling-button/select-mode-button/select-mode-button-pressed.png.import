@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ohgky3clne02"
-path="res://.godot/imported/select-mode-button-pressed.png-1f7cdcfc6f1e5fc84da3fa6b41cbdc76.ctex"
+path="res://.godot/imported/select-mode-button-pressed.png-ca6fbac12b94736b1f922aae38d9fa12.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Samples/styling-button/select-mode-button/select-mode-button-pressed.png"
-dest_files=["res://.godot/imported/select-mode-button-pressed.png-1f7cdcfc6f1e5fc84da3fa6b41cbdc76.ctex"]
+source_file="res://samples/styling-button/select-mode-button/select-mode-button-pressed.png"
+dest_files=["res://.godot/imported/select-mode-button-pressed.png-ca6fbac12b94736b1f922aae38d9fa12.ctex"]
 
 [params]
 

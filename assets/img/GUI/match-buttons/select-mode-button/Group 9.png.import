@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfksv227xtjrj"
-path="res://.godot/imported/match-buttons-container.png-81b8247730d4a370c3d71adf56a02e97.ctex"
+uid="uid://tkkoqmq8wbi2"
+path="res://.godot/imported/Group 9.png-6a78cab74be32d0bb81caf169012e7b8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://samples/styling-button/match-buttons-container.png"
-dest_files=["res://.godot/imported/match-buttons-container.png-81b8247730d4a370c3d71adf56a02e97.ctex"]
+source_file="res://assets/img/GUI/match-buttons/select-mode-button/Group 9.png"
+dest_files=["res://.godot/imported/Group 9.png-6a78cab74be32d0bb81caf169012e7b8.ctex"]
 
 [params]
 

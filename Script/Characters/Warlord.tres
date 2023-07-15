@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Character" load_steps=13 format=3 uid="uid://ds0uove3akfkl"]
+[gd_resource type="Resource" script_class="Character" load_steps=13 format=3 uid="uid://cmkluqtrqhayt"]
 
 [ext_resource type="Texture2D" uid="uid://clmmjr1q33b4l" path="res://Assets/Character/Warlord/Idle.png" id="1_sp8ia"]
 [ext_resource type="Script" path="res://Script/Scriptable/ScriptableCharacter.gd" id="1_vinjg"]

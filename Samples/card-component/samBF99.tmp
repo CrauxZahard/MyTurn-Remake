@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://mkdgceerixvv"]
+
+[ext_resource type="Script" path="res://samples/card-component/sample_scene.gd" id="1_4f5oq"]
+
+[node name="sample_scene" type="Node2D"]
+script = ExtResource("1_4f5oq")
