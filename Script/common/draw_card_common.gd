@@ -1,6 +1,6 @@
 class_name DrawCardCommon
 
-func drawCardSprite(cname, cmana, cdesc, cimage, ccolor, cposition):
+func drawCardSprite(cname, cmana, cdesc, cimage, ccolor) -> Sprite2D:
 	# Designing name label
 	var nameLabel = Label.new(); 
 	nameLabel.set_text(cname);
@@ -20,7 +20,6 @@ func drawCardSprite(cname, cmana, cdesc, cimage, ccolor, cposition):
 	descLabel.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER;
 	descLabel.add_theme_font_size_override("font_size", 12);
 	descLabel.set_position(self._getPositionBaseOnSize(descLabel.get_minimum_size()));
-	#descLabel.set_position(Vector2(-97, 30));
 	
 	# Designing card image
 	var textureDisplay = TextureRect.new();
@@ -32,13 +31,12 @@ func drawCardSprite(cname, cmana, cdesc, cimage, ccolor, cposition):
 	# Designing card sprite
 	var card = Sprite2D.new();
 	self._findCardColor(ccolor, card)
-	card.set_position(cposition);
 	card.add_child(manaLabel);
 	card.add_child(nameLabel);
 	card.add_child(descLabel);
 	card.add_child(textureDisplay);
 	
-	return card
+	return card;
 
 func _findCardColor(color, sprite):
 	var colorEnum = EnumContainerHelper.CardColorsEnum
@@ -53,12 +51,12 @@ func _findCardColor(color, sprite):
 	if(color == colorEnum.PURPLE):
 		sprite.set_texture(load("res://assets/img/card-skins/purple_skin.png"));
 
-func _getPositionBaseOnSize(size):
+func _getPositionBaseOnSize(size):	
 	var xAxis = size.x/2;
-	var yAxis = size.y/2
+	var yAxis = size.y/2;
 	if(xAxis > 70):
-		return Vector2(-xAxis + 24, yAxis + 32)
+		return Vector2(-xAxis + 24, yAxis + 32);
 	if(xAxis > 100):
 		return Vector2(0, 0);
-	return Vector2(-xAxis + 19, yAxis + 32)
+	return Vector2(-xAxis + 19, yAxis + 32);
 	

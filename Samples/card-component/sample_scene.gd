@@ -31,5 +31,7 @@ var CARDS = [
 func _ready():
 	var cardinal = DrawCardCommon.new();
 	for card in CARDS:
-		add_child(cardinal.drawCardSprite(card.cname, card.cmana, card.cdesc, card.cimage, card.ccolor, card.cposition));
+		var item = cardinal.drawCardSprite(card.cname, card.cmana, card.cdesc, card.cimage, card.ccolor);
+		item.set_position(card.cposition);
+		add_child(item);
 	
