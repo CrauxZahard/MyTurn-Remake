@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8bta0ns1w5pw"
-path="res://.godot/imported/skill_1.png-7a474dc148cfa196d956b5251d385f0c.ctex"
+uid="uid://bijgk8fm302l4"
+path="res://.godot/imported/bg_battle_scene.png.jpg-2495c6a605526a3d18d2dc333d1ef38f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/characters/warlord/cards/skill_1.png"
-dest_files=["res://.godot/imported/skill_1.png-7a474dc148cfa196d956b5251d385f0c.ctex"]
+source_file="res://assets/img/backgrounds/bg_battle_scene.png.jpg"
+dest_files=["res://.godot/imported/bg_battle_scene.png.jpg-2495c6a605526a3d18d2dc333d1ef38f.ctex"]
 
 [params]
 

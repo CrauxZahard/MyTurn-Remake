@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8bta0ns1w5pw"
-path="res://.godot/imported/skill_1.png-7a474dc148cfa196d956b5251d385f0c.ctex"
+uid="uid://b77ui2yxmkxv0"
+path="res://.godot/imported/btn_chat.png-b160ed4e10b1dd93216d6e141549edff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/characters/warlord/cards/skill_1.png"
-dest_files=["res://.godot/imported/skill_1.png-7a474dc148cfa196d956b5251d385f0c.ctex"]
+source_file="res://assets/img/buttons/icon_button/btn_chat.png"
+dest_files=["res://.godot/imported/btn_chat.png-b160ed4e10b1dd93216d6e141549edff.ctex"]
 
 [params]
 
