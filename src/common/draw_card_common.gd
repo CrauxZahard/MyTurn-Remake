@@ -1,36 +1,36 @@
 class_name DrawCardCommon
 
-
-func drawCardSprite(cname, cmana, cdesc, cimage, ccolor) -> Sprite2D:
+func drawCardSprite(cname:String, cmana:int, cdesc:String, cimage:String, ccolor) -> Sprite2D:
 	# Designing name label
-	var nameLabel = Label.new(); 
+	var nameLabel:Label = Label.new(); 
 	nameLabel.set_text(cname);
 	nameLabel.set_position(Vector2(-51, -115));
 	nameLabel.add_theme_font_size_override("font_size", 20);
 	
 	# Designing mana label
-	var manaLabel = Label.new(); 
+	var manaLabel:Label = Label.new(); 
 	manaLabel.set_text(str(cmana));
 	manaLabel.set_position(Vector2(-83, -122));
 	manaLabel.add_theme_font_size_override("font_size", 30);
 
 	# Designing desc label
-	var descLabel = Label.new(); 
+	var descLabel:Label = Label.new(); 
 	descLabel.set_text(cdesc);
 	descLabel.vertical_alignment = VERTICAL_ALIGNMENT_CENTER;
 	descLabel.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER;
 	descLabel.add_theme_font_size_override("font_size", 12);
-	descLabel.set_position(self._getPositionBaseOnSize(descLabel.get_minimum_size()));
+	var getVectors:Vector2 = self._getPositionBaseOnSize(descLabel.get_minimum_size())
+	descLabel.set_position(getVectors);
 	
 	# Designing card image
-	var textureDisplay = TextureRect.new();
-	var img = ImageTexture.create_from_image(Image.load_from_file(cimage))
+	var textureDisplay:TextureRect = TextureRect.new();
+	var img:ImageTexture = ImageTexture.create_from_image(Image.load_from_file(ProjectSettings.globalize_path(cimage)));
 	img.set_size_override(Vector2(194, 106))
 	textureDisplay.set_texture(img);
 	textureDisplay.set_position(Vector2(-97, -74));
 	
 	# Designing card sprite
-	var card = Sprite2D.new();
+	var card:Sprite2D = Sprite2D.new();
 	self._findCardColor(ccolor, card)
 	card.add_child(manaLabel);
 	card.add_child(nameLabel);
@@ -39,22 +39,22 @@ func drawCardSprite(cname, cmana, cdesc, cimage, ccolor) -> Sprite2D:
 	
 	return card;
 
-func _findCardColor(color, sprite):
+func _findCardColor(color, sprite:Sprite2D) -> void:
 	var colorEnum = EnumContainerHelper.CardColorsEnum
 	if(color == colorEnum.RED):
-		sprite.set_texture(load("res://assets/img/card-skins/red_skin.png"));
+		sprite.set_texture(load("res://assets/img/card_skins/skin_red.png"));
 	if(color == colorEnum.GREEN):
-		sprite.set_texture(load("res://assets/img/card-skins/green_skin.png"));
+		sprite.set_texture(load("res://assets/img/card_skins/skin_green.png"));
 	if(color == colorEnum.BLUE):
-		sprite.set_texture(load("res://assets/img/card-skins/blue_skin.png"));
+		sprite.set_texture(load("res://assets/img/card_skins/skin_blue.png"));
 	if(color == colorEnum.YELLOW):
-		sprite.set_texture(load("res://assets/img/card-skins/yello_skin.png"));
+		sprite.set_texture(load("res://assets/img/card_skins/skin_yello.png"));
 	if(color == colorEnum.PURPLE):
-		sprite.set_texture(load("res://assets/img/card-skins/purple_skin.png"));
+		sprite.set_texture(load("res://assets/img/card_skins/skin_purple.png"));
 
-func _getPositionBaseOnSize(size):	
-	var xAxis = size.x/2;
-	var yAxis = size.y/2;
+func _getPositionBaseOnSize(size:Vector2):	
+	var xAxis:float = size.x/2;
+	var yAxis:float = size.y/2;
 	if(xAxis > 70):
 		return Vector2(-xAxis + 24, yAxis + 32);
 	if(xAxis > 100):

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0piw3f8i36li"
-path="res://.godot/imported/avatar_border.png-35c5960fd4d6f8c6dde4af207726b872.ctex"
+uid="uid://chjk4kok8qsxl"
+path="res://.godot/imported/btn_donut.png-7d3e236ccf06c01f34e44773330e05b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/huds/avatar_border.png"
-dest_files=["res://.godot/imported/avatar_border.png-35c5960fd4d6f8c6dde4af207726b872.ctex"]
+source_file="res://assets/img/buttons/icon_button/btn_donut.png"
+dest_files=["res://.godot/imported/btn_donut.png-7d3e236ccf06c01f34e44773330e05b3.ctex"]
 
 [params]
 

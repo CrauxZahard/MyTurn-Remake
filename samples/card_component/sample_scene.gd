@@ -35,3 +35,4 @@ func _ready():
 		item.set_position(card.cposition);
 		add_child(item);
 	
+	
