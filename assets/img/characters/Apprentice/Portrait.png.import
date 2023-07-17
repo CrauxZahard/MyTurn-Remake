@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnnr5h8wopb3"
-path="res://.godot/imported/Portrait.png-3fa29474f6d3330518fbe0ce5106292a.ctex"
+uid="uid://dr4a02w8mjo46"
+path="res://.godot/imported/portrait.png-f040eca851cdfdbfb5ea52b28dac4473.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/characters/Apprentice/Portrait.png"
-dest_files=["res://.godot/imported/Portrait.png-3fa29474f6d3330518fbe0ce5106292a.ctex"]
+source_file="res://assets/img/characters/apprentice/portrait.png"
+dest_files=["res://.godot/imported/portrait.png-f040eca851cdfdbfb5ea52b28dac4473.ctex"]
 
 [params]
 
