@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1ojoph3gtad7"
-path="res://.godot/imported/btn_donut_pressed.png-eb1623f9be0b97c3eaac3f8a4fba08a2.ctex"
+uid="uid://7ukeij2qyqjg"
+path="res://.godot/imported/match_name_frame.png-860062fd5437a788ae8e049adf9e3ba9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/buttons/icon_button/btn_donut_pressed.png"
-dest_files=["res://.godot/imported/btn_donut_pressed.png-eb1623f9be0b97c3eaac3f8a4fba08a2.ctex"]
+source_file="res://assets/img/huds/battle_scene/match_name_frame.png"
+dest_files=["res://.godot/imported/match_name_frame.png-860062fd5437a788ae8e049adf9e3ba9.ctex"]
 
 [params]
 

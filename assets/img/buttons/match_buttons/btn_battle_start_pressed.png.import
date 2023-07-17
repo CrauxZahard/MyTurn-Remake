@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://com5kmqixdu50"
-path="res://.godot/imported/btn_friend_pressed.png-7fa8d94b0aeaf36ce2cd1be323f708f0.ctex"
+uid="uid://cx1jb8gggrxup"
+path="res://.godot/imported/btn_battle_start_pressed.png-996712acd985349ba3bba953c97a59e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/buttons/icon_button/btn_friend_pressed.png"
-dest_files=["res://.godot/imported/btn_friend_pressed.png-7fa8d94b0aeaf36ce2cd1be323f708f0.ctex"]
+source_file="res://assets/img/buttons/match_buttons/btn_battle_start_pressed.png"
+dest_files=["res://.godot/imported/btn_battle_start_pressed.png-996712acd985349ba3bba953c97a59e6.ctex"]
 
 [params]
 

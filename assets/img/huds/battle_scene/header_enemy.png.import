@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dypb2uc60npvm"
-path="res://.godot/imported/battle_header_red.png-3719abd19c2ce8001700bc9a6789071b.ctex"
+uid="uid://cdceo8fo1di50"
+path="res://.godot/imported/header_enemy.png-0372e8cffc713ae8661300a56de853ea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/huds/battle_scene/battle_header_red.png"
-dest_files=["res://.godot/imported/battle_header_red.png-3719abd19c2ce8001700bc9a6789071b.ctex"]
+source_file="res://assets/img/huds/battle_scene/header_enemy.png"
+dest_files=["res://.godot/imported/header_enemy.png-0372e8cffc713ae8661300a56de853ea.ctex"]
 
 [params]
 

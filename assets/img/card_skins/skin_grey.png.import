@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vqjsfcir3ocv"
-path="res://.godot/imported/btn_played_cards.png-13a49fb335f64e322c9710a0504824e8.ctex"
+uid="uid://tgo7an63pgnp"
+path="res://.godot/imported/skin_grey.png-5a871dcdb6b080ed7979a668d9993d49.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/buttons/icon_button/btn_played_cards.png"
-dest_files=["res://.godot/imported/btn_played_cards.png-13a49fb335f64e322c9710a0504824e8.ctex"]
+source_file="res://assets/img/card_skins/skin_grey.png"
+dest_files=["res://.godot/imported/skin_grey.png-5a871dcdb6b080ed7979a668d9993d49.ctex"]
 
 [params]
 
