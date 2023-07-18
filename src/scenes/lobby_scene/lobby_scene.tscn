@@ -1,0 +1,96 @@
+[gd_scene load_steps=2 format=3 uid="uid://8fbmiahhv1fj"]
+
+[ext_resource type="Script" path="res://src/scenes/lobby_scene/lobby_scene.gd" id="1_wqyav"]
+
+[node name="lobby_scene" type="Node2D"]
+script = ExtResource("1_wqyav")
+
+[node name="background" type="TextureRect" parent="."]
+offset_left = -27.0
+offset_top = -30.0
+offset_right = 1406.0
+offset_bottom = 800.0
+
+[node name="lobby_header" type="TextureRect" parent="."]
+offset_right = 1366.0
+offset_bottom = 90.0
+expand_mode = 1
+
+[node name="container_left" type="TextureRect" parent="lobby_header"]
+layout_mode = 0
+offset_right = 450.0
+offset_bottom = 90.0
+expand_mode = 1
+
+[node name="name_frame" type="TextureRect" parent="lobby_header/container_left"]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 17.0
+offset_right = 326.0
+offset_bottom = 72.0
+expand_mode = 1
+
+[node name="username" type="Label" parent="lobby_header/container_left/name_frame"]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 11.0
+offset_right = 97.0
+offset_bottom = 39.0
+theme_override_font_sizes/font_size = 20
+
+[node name="container_right" type="TextureRect" parent="lobby_header"]
+layout_mode = 0
+offset_left = 916.0
+offset_right = 1366.0
+offset_bottom = 90.0
+expand_mode = 1
+flip_h = true
+
+[node name="btn_donut" type="TextureButton" parent="lobby_header/container_right"]
+offset_left = 228.0
+offset_top = 26.0
+offset_right = 268.0
+offset_bottom = 66.0
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="btn_friend" type="TextureButton" parent="lobby_header/container_right"]
+offset_left = 294.0
+offset_top = 26.0
+offset_right = 354.0
+offset_bottom = 66.0
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="btn_menu" type="TextureButton" parent="lobby_header/container_right"]
+layout_mode = 0
+offset_left = 380.0
+offset_top = 26.0
+offset_right = 420.0
+offset_bottom = 66.0
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="my_turn_logo" type="TextureRect" parent="lobby_header"]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 13.0
+offset_right = 775.0
+offset_bottom = 93.0
+expand_mode = 1
+
+[node name="btn_battle_start" type="TextureButton" parent="."]
+offset_left = 1133.0
+offset_top = 636.0
+offset_right = 1314.0
+offset_bottom = 722.0
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="btn_match_mode" type="TextureButton" parent="."]
+offset_left = 1028.0
+offset_top = 636.0
+offset_right = 1114.0
+offset_bottom = 722.0
+ignore_texture_size = true
+stretch_mode = 0
