@@ -3,6 +3,7 @@
 - Assets folder: where the files and media are stored
 - Sample folder: where some samples with guide are stored
 - Docs folder: where all the documentation about the project are stored in md format
+- Bck folder: stands for backup all codes that are not use anymore are put here for future reference
 - Src folder: is where our code and other files related to the game are located
   - Common folder: Any ui that is repeatedly used by the game are stored here
   - Helpers folder: Any logic that is repeatedly used by the game are stored here

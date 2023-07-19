@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhem74hu307sq"]
+
+[ext_resource type="Script" path="res://src/common/match_icon_common/match_icon_common.gd" id="1_53nht"]
+[ext_resource type="Texture2D" uid="uid://bh2yvvjgbo7g1" path="res://assets/img/huds/battle_scene/ico_used_card.png" id="1_kefu2"]
+
+[node name="match_icon_common" type="ColorRect"]
+offset_left = -50.0
+offset_top = -20.0
+offset_right = 50.0
+offset_bottom = 20.0
+color = Color(1, 1, 1, 0)
+script = ExtResource("1_53nht")
+
+[node name="icon" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_kefu2")
+expand_mode = 1
+
+[node name="text" type="Label" parent="."]
+layout_mode = 0
+offset_left = 50.0
+offset_right = 100.0
+offset_bottom = 40.0
+theme_override_font_sizes/font_size = 25
+text = "10"
+vertical_alignment = 1

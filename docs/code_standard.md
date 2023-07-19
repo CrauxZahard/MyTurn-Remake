@@ -44,3 +44,5 @@ match_scene.tscn
 ## Notes
 
 - Folder name will be added at the end of the class and file name under src folder, vice versa in the asset folder
+- If the function will not be use outside the class put an underscore "\_" to it to indicate that it is private
+- The export variable should be in capitalize.
