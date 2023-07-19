@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bccsqtvf4jpwc"
-path="res://.godot/imported/Skill_3.png-51bb39b269fb61cdd744bf41d401a48e.ctex"
+path="res://.godot/imported/Skill_3.png-3a82a07e856198e1126e3bc2ac88dd57.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/characters/Apprentice/Cards/Skill_3.png"
-dest_files=["res://.godot/imported/Skill_3.png-51bb39b269fb61cdd744bf41d401a48e.ctex"]
+source_file="res://assets/img/characters/apprentice/cards/Skill_3.png"
+dest_files=["res://.godot/imported/Skill_3.png-3a82a07e856198e1126e3bc2ac88dd57.ctex"]
 
 [params]
 

@@ -1,0 +1,104 @@
+[gd_scene load_steps=12 format=3 uid="uid://cp18h36mupyyd"]
+
+[ext_resource type="Script" path="res://src/scenes/match_scene/match_scene.gd" id="1_bp2aw"]
+[ext_resource type="Texture2D" uid="uid://biwd0blss74hk" path="res://assets/img/huds/battle_scene/header_own.png" id="2_1w3bw"]
+[ext_resource type="Texture2D" uid="uid://dpx5jom50n4jx" path="res://assets/img/backgrounds/bg_battle_scene.jpg" id="2_qpg2b"]
+[ext_resource type="Texture2D" uid="uid://7ukeij2qyqjg" path="res://assets/img/huds/battle_scene/match_name_frame.png" id="3_hshew"]
+[ext_resource type="Texture2D" uid="uid://cvhd7svp5sgge" path="res://assets/img/huds/battle_scene/header_enemy.png" id="3_v72fl"]
+[ext_resource type="Texture2D" uid="uid://ddylhvhsbra47" path="res://assets/img/buttons/icon_button/btn_chat.png" id="5_hjr81"]
+[ext_resource type="Texture2D" uid="uid://dkcda3m7jirew" path="res://assets/img/buttons/icon_button/btn_chat_pressed.png" id="6_1qi61"]
+[ext_resource type="Texture2D" uid="uid://l7y8bamfwaii" path="res://assets/img/buttons/icon_button/btn_played_cards.png" id="7_ones5"]
+[ext_resource type="Texture2D" uid="uid://deko7g4wjbpwd" path="res://assets/img/buttons/icon_button/btn_played_cards_pressed.png" id="8_5dt8m"]
+[ext_resource type="Texture2D" uid="uid://bkdj47o68k6f5" path="res://assets/img/buttons/icon_button/btn_settings.png" id="9_vmwb3"]
+[ext_resource type="Texture2D" uid="uid://cu0qkauq7o0el" path="res://assets/img/buttons/icon_button/btn_settings_pressed.png" id="10_xjfmw"]
+
+[node name="match_scene" type="Node2D"]
+script = ExtResource("1_bp2aw")
+
+[node name="bg_match" type="TextureRect" parent="."]
+offset_right = 1367.0
+offset_bottom = 768.0
+texture = ExtResource("2_qpg2b")
+
+[node name="header_blue" type="TextureRect" parent="."]
+offset_top = 668.0
+offset_right = 1366.0
+offset_bottom = 768.0
+texture = ExtResource("2_1w3bw")
+expand_mode = 1
+
+[node name="own_user_container" type="TextureRect" parent="header_blue"]
+layout_mode = 0
+offset_right = 300.0
+offset_bottom = 55.0
+texture = ExtResource("3_hshew")
+expand_mode = 1
+
+[node name="own_user_name" type="Label" parent="header_blue"]
+layout_mode = 0
+offset_left = 121.0
+offset_top = 1.0
+offset_right = 278.0
+offset_bottom = 53.0
+theme_override_font_sizes/font_size = 25
+text = "Craux"
+vertical_alignment = 1
+
+[node name="header_red" type="TextureRect" parent="."]
+offset_right = 1366.0
+offset_bottom = 100.0
+texture = ExtResource("3_v72fl")
+expand_mode = 1
+
+[node name="enemy_user_container" type="TextureRect" parent="header_red"]
+layout_mode = 0
+offset_left = 1066.0
+offset_right = 1366.0
+offset_bottom = 55.0
+texture = ExtResource("3_hshew")
+expand_mode = 1
+flip_h = true
+
+[node name="btn_chat" type="TextureButton" parent="header_red"]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 20.0
+offset_right = 210.0
+offset_bottom = 70.0
+texture_normal = ExtResource("5_hjr81")
+texture_pressed = ExtResource("6_1qi61")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="btn_played_cards" type="TextureButton" parent="header_red"]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 20.0
+offset_right = 145.0
+offset_bottom = 70.0
+texture_normal = ExtResource("7_ones5")
+texture_pressed = ExtResource("8_5dt8m")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="btn_settings" type="TextureButton" parent="header_red"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 20.0
+offset_right = 80.0
+offset_bottom = 70.0
+texture_normal = ExtResource("9_vmwb3")
+texture_pressed = ExtResource("10_xjfmw")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="enemy_user_name" type="Label" parent="header_red"]
+layout_mode = 0
+offset_left = 1088.0
+offset_top = 2.0
+offset_right = 1245.0
+offset_bottom = 54.0
+theme_override_font_sizes/font_size = 25
+text = "Tezada"
+horizontal_alignment = 2
+vertical_alignment = 1

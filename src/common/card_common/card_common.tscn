@@ -1,0 +1,66 @@
+[gd_scene load_steps=5 format=3 uid="uid://7vwtx13a0v6m"]
+
+[ext_resource type="Texture2D" uid="uid://2hqairadf6if" path="res://assets/img/card_skins/skin_red.png" id="1_1g4gt"]
+[ext_resource type="Script" path="res://src/common/card_common/card_common.gd" id="1_1yiyd"]
+[ext_resource type="Texture2D" uid="uid://cl3k2l2jlg7ps" path="res://icon.svg" id="3_gn4q6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dxxrq"]
+size = Vector2(150, 200)
+
+[node name="card_common" type="Sprite2D"]
+script = ExtResource("1_1yiyd")
+
+[node name="card_skin" type="TextureRect" parent="."]
+offset_left = -75.0
+offset_top = -100.0
+offset_right = 75.0
+offset_bottom = 100.0
+texture = ExtResource("1_1g4gt")
+expand_mode = 1
+
+[node name="card_image" type="TextureRect" parent="card_skin"]
+offset_left = 2.0
+offset_top = 41.0
+offset_right = 148.0
+offset_bottom = 125.0
+texture = ExtResource("3_gn4q6")
+expand_mode = 1
+
+[node name="card_name" type="Label" parent="card_skin"]
+offset_left = 33.0
+offset_top = 5.0
+offset_right = 147.0
+offset_bottom = 67.0
+theme_override_font_sizes/font_size = 20
+text = "Attack
+
+"
+vertical_alignment = 1
+
+[node name="mana" type="Label" parent="card_skin"]
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 33.0
+offset_bottom = 40.0
+theme_override_font_sizes/font_size = 25
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="card_desc" type="Label" parent="card_skin"]
+offset_left = 2.0
+offset_top = 127.0
+offset_right = 148.0
+offset_bottom = 192.0
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 12
+text = "Deals damage to
+target enemy
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="area" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="area"]
+shape = SubResource("RectangleShape2D_dxxrq")

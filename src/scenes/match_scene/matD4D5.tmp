@@ -1,0 +1,62 @@
+[gd_scene load_steps=2 format=3 uid="uid://cp18h36mupyyd"]
+
+[ext_resource type="Script" path="res://src/scenes/match_scene/match_scene.gd" id="1_bp2aw"]
+
+[node name="match_scene" type="Node2D"]
+script = ExtResource("1_bp2aw")
+
+[node name="bg_match" type="TextureRect" parent="."]
+offset_right = 1367.0
+offset_bottom = 768.0
+
+[node name="header_blue" type="TextureRect" parent="."]
+offset_top = 688.0
+offset_right = 1366.0
+offset_bottom = 768.0
+expand_mode = 1
+
+[node name="own_user_container" type="TextureRect" parent="header_blue"]
+layout_mode = 0
+offset_right = 300.0
+offset_bottom = 40.0
+expand_mode = 1
+
+[node name="header_red" type="TextureRect" parent="."]
+offset_right = 1366.0
+offset_bottom = 80.0
+expand_mode = 1
+
+[node name="enemy_user_container" type="TextureRect" parent="header_red"]
+layout_mode = 0
+offset_left = 1066.0
+offset_right = 1366.0
+offset_bottom = 40.0
+expand_mode = 1
+flip_h = true
+
+[node name="btn_chat" type="TextureButton" parent="header_red"]
+layout_mode = 0
+offset_left = 149.0
+offset_top = 15.0
+offset_right = 199.0
+offset_bottom = 65.0
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="btn_played_cards" type="TextureButton" parent="header_red"]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 15.0
+offset_right = 140.0
+offset_bottom = 65.0
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="btn_settings" type="TextureButton" parent="header_red"]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 15.0
+offset_right = 81.0
+offset_bottom = 65.0
+ignore_texture_size = true
+stretch_mode = 0

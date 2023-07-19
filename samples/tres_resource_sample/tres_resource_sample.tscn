@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://drk6vncgy7rr4"]
+
+[ext_resource type="Script" path="res://samples/tres_resource_sample/tres_resource_sample.gd" id="1_beuyw"]
+
+[node name="tres_resource_sample" type="Node2D"]
+script = ExtResource("1_beuyw")
+
+[node name="logo" type="TextureRect" parent="."]
+offset_left = 45.0
+offset_top = 36.0
+offset_right = 557.0
+offset_bottom = 548.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 608.0
+offset_top = 276.0
+offset_right = 1024.0
+offset_bottom = 437.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
