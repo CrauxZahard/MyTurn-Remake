@@ -1,8 +1,22 @@
 class_name MatchScene extends Node2D
+const CARDENUM = EnumContainerHelper.CardColorsEnum;
+@onready var card = preload("res://src/common/card_common/card_common.tscn");
 
 func _ready():
 	self._loadFiles();
+	self._drawCard(Vector2(400,700), CARDENUM.GREEN);
+	self._drawCard(Vector2(500,700), CARDENUM.PURPLE);
+	self._drawCard(Vector2(600,700), CARDENUM.GREEN);
+	self._drawCard(Vector2(600,700), CARDENUM.GREY);
+	self._drawCard(Vector2(700,700), CARDENUM.RED);
+	self._drawCard(Vector2(800,700), CARDENUM.YELLOW);
+	self._drawCard(Vector2(900,700), CARDENUM.BLUE);
+	self._drawCard(Vector2(1000,700), CARDENUM.RED);
+	self._drawCard(Vector2(1100,700), CARDENUM.BLUE);
+	self._drawCard(Vector2(1200,700), CARDENUM.PURPLE);
 	
+func _process(_delta):
+	pass
 func _loadFiles() -> void:
 	# Load assets
 	self.get_node("bg_match").set_texture(load("res://assets/img/backgrounds/bg_battle_scene.jpg"));
@@ -41,3 +55,9 @@ func _addUserName(uname:String, uposition:Vector2) -> void:
 	username.set_text(uname);
 	username.set_position(uposition);
 	self.add_child(username);
+
+func _drawCard(initPos:Vector2, ccolor) -> void:
+	var drawing = card.instantiate();
+	drawing.INITPOS = initPos;
+	drawing.INITSKIN = ccolor;
+	self.add_child(drawing);
