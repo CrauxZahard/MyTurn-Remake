@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://boluy5vyxdh21"]
+
+[ext_resource type="Script" path="res://src/common/character_common/character_common.gd" id="1_vayiu"]
+
+[node name="character_common" type="Sprite2D"]
+script = ExtResource("1_vayiu")

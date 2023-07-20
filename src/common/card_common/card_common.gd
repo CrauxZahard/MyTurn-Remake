@@ -14,7 +14,7 @@ func _ready():
 	self.set_position(INIT_POSITION);
 	self.get_node("area").input_event.connect(self._onPressedLeftClickMouse);
 
-func _process(delta):
+func _process(_delta):
 	self._onMouseDrag(get_global_mouse_position());
 
 func _onPressedLeftClickMouse(_viewport, event, _shape_idx) -> void:

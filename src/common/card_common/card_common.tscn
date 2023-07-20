@@ -19,6 +19,7 @@ texture = ExtResource("1_1g4gt")
 expand_mode = 1
 
 [node name="card_image" type="TextureRect" parent="card_skin"]
+layout_mode = 0
 offset_left = 2.0
 offset_top = 41.0
 offset_right = 148.0
@@ -27,6 +28,7 @@ texture = ExtResource("3_gn4q6")
 expand_mode = 1
 
 [node name="card_name" type="Label" parent="card_skin"]
+layout_mode = 0
 offset_left = 33.0
 offset_top = 5.0
 offset_right = 147.0
@@ -38,6 +40,7 @@ text = "Attack
 vertical_alignment = 1
 
 [node name="mana" type="Label" parent="card_skin"]
+layout_mode = 0
 offset_left = 2.0
 offset_top = 2.0
 offset_right = 33.0
@@ -48,6 +51,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="card_desc" type="Label" parent="card_skin"]
+layout_mode = 0
 offset_left = 2.0
 offset_top = 127.0
 offset_right = 148.0
