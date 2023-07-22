@@ -1,6 +1,7 @@
 class_name ConstantContainerHelper
 
 const ACTION_DELAY = 0.5;
+
 const CHAR_SLOTS = {
 	"SLOT_1": Vector2(105, 400),
 	"SLOT_2": Vector2(260, 400),
