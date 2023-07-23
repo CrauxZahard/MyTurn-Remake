@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://xswgsvh7g6og"]
+
+[ext_resource type="Theme" uid="uid://bck8epyhma57k" path="res://src/common/health_ex_bar_common/health_theme.tres" id="2_ik2py"]
+[ext_resource type="Theme" uid="uid://dsnekqgcgeoar" path="res://src/common/health_ex_bar_common/ex_theme.tres" id="3_hec4j"]
+
+[sub_resource type="GDScript" id="GDScript_2xmv1"]
+script/source = "class_name HealthExBarCommon extends Control
+
+@export var HP_MAX:int = 150;
+@export var EX_MAX:int = 100;
+@export var EX_VALUE:int = 50
+@export var HP_VALUE:int = 50
+
+func _ready():
+	pass
+
+"
+
+[node name="health_ex_bar_common" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -100.0
+offset_top = -24.0
+offset_right = 100.0
+offset_bottom = 24.0
+script = SubResource("GDScript_2xmv1")
+
+[node name="health_bar" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_right = 200.0
+offset_bottom = 25.0
+theme = ExtResource("2_ik2py")
+max_value = 120.0
+value = 50.0
+rounded = true
+show_percentage = false
+
+[node name="ex_bar" type="ProgressBar" parent="health_bar"]
+offset_top = 29.0
+offset_right = 200.0
+offset_bottom = 44.0
+theme = ExtResource("3_hec4j")
+theme_override_colors/font_color = Color(0.894118, 0.517647, 0.00392157, 1)
+rounded = true
+show_percentage = false

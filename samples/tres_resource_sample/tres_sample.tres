@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="SampleResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://samples/tres_resource_sample/sample_resource.gd" id="1_ok8jj"]
+
+[resource]
+script = ExtResource("1_ok8jj")
+sName = "Tezada"
+image = "res://icon.svg"

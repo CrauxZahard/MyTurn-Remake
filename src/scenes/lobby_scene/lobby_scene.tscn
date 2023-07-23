@@ -1,6 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://8fbmiahhv1fj"]
+[gd_scene load_steps=17 format=3 uid="uid://8fbmiahhv1fj"]
 
 [ext_resource type="Script" path="res://src/scenes/lobby_scene/lobby_scene.gd" id="1_wqyav"]
+[ext_resource type="Texture2D" uid="uid://duo1n8wghca3s" path="res://assets/img/backgrounds/bg_lobby_scene.jpg" id="2_tkc26"]
+[ext_resource type="Texture2D" uid="uid://buot8um7etny6" path="res://assets/img/huds/lobby_scene/header_lobby.png" id="3_atk2c"]
+[ext_resource type="Texture2D" uid="uid://dn7affgofgj07" path="res://assets/img/huds/lobby_scene/container.png" id="4_su2mw"]
+[ext_resource type="Texture2D" uid="uid://ccijel1nkbgrv" path="res://assets/img/huds/lobby_scene/frame_name.png" id="5_yrs74"]
+[ext_resource type="Texture2D" uid="uid://chjk4kok8qsxl" path="res://assets/img/buttons/icon_button/btn_donut.png" id="6_dqs5g"]
+[ext_resource type="Texture2D" uid="uid://b7goc0derlp26" path="res://assets/img/buttons/icon_button/btn_donut_pressed.png" id="7_k6tmh"]
+[ext_resource type="Texture2D" uid="uid://ikq2p0a1pl42" path="res://assets/img/buttons/icon_button/btn_friend.png" id="8_7f48e"]
+[ext_resource type="Texture2D" uid="uid://ga3rltdvvfje" path="res://assets/img/buttons/icon_button/btn_friend_pressed.png" id="9_lbnih"]
+[ext_resource type="Texture2D" uid="uid://bn61d10cwyvf8" path="res://assets/img/buttons/icon_button/btn_menu.png" id="10_o41v7"]
+[ext_resource type="Texture2D" uid="uid://q6ofddsip58h" path="res://assets/img/buttons/icon_button/btn_menu_pressed.png" id="11_frtea"]
+[ext_resource type="Texture2D" uid="uid://co328g3sxr465" path="res://assets/img/myturn_logo.png" id="12_abppm"]
+[ext_resource type="Texture2D" uid="uid://dorwfjdtcgjkk" path="res://assets/img/buttons/match_buttons/btn_battle_start.png" id="13_xjail"]
+[ext_resource type="Texture2D" uid="uid://cx1jb8gggrxup" path="res://assets/img/buttons/match_buttons/btn_battle_start_pressed.png" id="14_7aaex"]
+[ext_resource type="Texture2D" uid="uid://bnq4kbk6cqg5k" path="res://assets/img/buttons/match_buttons/btn_match_mode.png" id="15_euyon"]
+[ext_resource type="Texture2D" uid="uid://cc16id3w0oxu7" path="res://assets/img/buttons/match_buttons/btn_match_mode_pressed.png" id="16_pjo1q"]
 
 [node name="lobby_scene" type="Node2D"]
 script = ExtResource("1_wqyav")
@@ -10,16 +25,19 @@ offset_left = -27.0
 offset_top = -30.0
 offset_right = 1406.0
 offset_bottom = 800.0
+texture = ExtResource("2_tkc26")
 
 [node name="lobby_header" type="TextureRect" parent="."]
 offset_right = 1366.0
 offset_bottom = 90.0
+texture = ExtResource("3_atk2c")
 expand_mode = 1
 
 [node name="container_left" type="TextureRect" parent="lobby_header"]
 layout_mode = 0
 offset_right = 450.0
 offset_bottom = 90.0
+texture = ExtResource("4_su2mw")
 expand_mode = 1
 
 [node name="name_frame" type="TextureRect" parent="lobby_header/container_left"]
@@ -28,46 +46,57 @@ offset_left = 76.0
 offset_top = 17.0
 offset_right = 326.0
 offset_bottom = 72.0
+texture = ExtResource("5_yrs74")
 expand_mode = 1
 
 [node name="username" type="Label" parent="lobby_header/container_left/name_frame"]
 layout_mode = 0
 offset_left = 57.0
-offset_top = 11.0
-offset_right = 97.0
-offset_bottom = 39.0
+offset_top = 1.0
+offset_right = 230.0
+offset_bottom = 54.0
 theme_override_font_sizes/font_size = 20
+vertical_alignment = 1
 
 [node name="container_right" type="TextureRect" parent="lobby_header"]
 layout_mode = 0
 offset_left = 916.0
 offset_right = 1366.0
 offset_bottom = 90.0
+texture = ExtResource("4_su2mw")
 expand_mode = 1
 flip_h = true
 
 [node name="btn_donut" type="TextureButton" parent="lobby_header/container_right"]
-offset_left = 228.0
+layout_mode = 0
+offset_left = 219.0
 offset_top = 26.0
-offset_right = 268.0
+offset_right = 259.0
 offset_bottom = 66.0
+texture_normal = ExtResource("6_dqs5g")
+texture_pressed = ExtResource("7_k6tmh")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="btn_friend" type="TextureButton" parent="lobby_header/container_right"]
-offset_left = 294.0
+layout_mode = 0
+offset_left = 285.0
 offset_top = 26.0
-offset_right = 354.0
+offset_right = 345.0
 offset_bottom = 66.0
+texture_normal = ExtResource("8_7f48e")
+texture_pressed = ExtResource("9_lbnih")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="btn_menu" type="TextureButton" parent="lobby_header/container_right"]
 layout_mode = 0
-offset_left = 380.0
+offset_left = 371.0
 offset_top = 26.0
-offset_right = 420.0
+offset_right = 411.0
 offset_bottom = 66.0
+texture_normal = ExtResource("10_o41v7")
+texture_pressed = ExtResource("11_frtea")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -77,6 +106,7 @@ offset_left = 610.0
 offset_top = 13.0
 offset_right = 775.0
 offset_bottom = 93.0
+texture = ExtResource("12_abppm")
 expand_mode = 1
 
 [node name="btn_battle_start" type="TextureButton" parent="."]
@@ -84,6 +114,8 @@ offset_left = 1133.0
 offset_top = 636.0
 offset_right = 1314.0
 offset_bottom = 722.0
+texture_normal = ExtResource("13_xjail")
+texture_pressed = ExtResource("14_7aaex")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -92,5 +124,7 @@ offset_left = 1028.0
 offset_top = 636.0
 offset_right = 1114.0
 offset_bottom = 722.0
+texture_normal = ExtResource("15_euyon")
+texture_pressed = ExtResource("16_pjo1q")
 ignore_texture_size = true
 stretch_mode = 0

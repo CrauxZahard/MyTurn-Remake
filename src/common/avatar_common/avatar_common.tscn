@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://dgldvtsg28ad7"]
+
+[ext_resource type="Texture2D" uid="uid://trpx4lpxthfj" path="res://assets/img/borders/bdr_main.png" id="1_voy42"]
+[ext_resource type="Script" path="res://src/common/avatar_common/avatar_common.gd" id="2_1cmu3"]
+[ext_resource type="Shader" path="res://src/shaders/corner_radius.gdshader" id="3_a1at4"]
+[ext_resource type="Texture2D" uid="uid://cl3k2l2jlg7ps" path="res://icon.svg" id="4_4nwsg"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_efstq"]
+shader = ExtResource("3_a1at4")
+shader_parameter/corner_radius = 100000.0
+
+[node name="avatar_common" type="TextureRect"]
+offset_left = -35.0
+offset_top = -35.0
+offset_right = 35.0
+offset_bottom = 35.0
+texture = ExtResource("1_voy42")
+expand_mode = 1
+script = ExtResource("2_1cmu3")
+
+[node name="image" type="TextureRect" parent="."]
+material = SubResource("ShaderMaterial_efstq")
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 63.0
+offset_bottom = 63.0
+texture = ExtResource("4_4nwsg")
+expand_mode = 1

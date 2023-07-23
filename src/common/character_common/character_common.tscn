@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://boluy5vyxdh21"]
+
+[ext_resource type="Script" path="res://src/common/character_common/character_common.gd" id="1_vayiu"]
+[ext_resource type="PackedScene" uid="uid://xswgsvh7g6og" path="res://src/common/health_ex_bar_common/health_ex_bar_common.tscn" id="2_17t27"]
+
+[node name="character_common" type="Sprite2D"]
+script = ExtResource("1_vayiu")
+
+[node name="health_ex_bar_common" parent="." instance=ExtResource("2_17t27")]
+offset_left = -50.0
+offset_top = 135.0
+offset_right = 150.0
+offset_bottom = 183.0
+scale = Vector2(0.5, 0.5)
+script = null
